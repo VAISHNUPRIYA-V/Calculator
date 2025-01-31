@@ -54,7 +54,7 @@ function Cgpa() {
     const token = localStorage.getItem('token');
     {console.log(gpArray)}
     if (token) {
-      await fetch('http://localhost:5000/cgpa', {
+      await fetch('https://calculator-back-2.onrender.com/cgpa', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

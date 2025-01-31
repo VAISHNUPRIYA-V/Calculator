@@ -11,7 +11,7 @@ function History() {
       if (!token) return setHistory({ calculatorHistory: [], cgpaHistory: [] });
 
       try {
-        const res = await axios.get("http://localhost:5000/history", {
+        const res = await axios.get("https://calculator-back-2.onrender.com/history", {
           headers: { token }
         });
 

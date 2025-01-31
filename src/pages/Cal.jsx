@@ -24,7 +24,7 @@ function Cal() {
       // Save the calculation to history
       const token = localStorage.getItem('token'); // Assuming you store JWT token
       if (token) {
-        await fetch('http://localhost:5000/calculate', { // Change URL based on backend
+        await fetch('https://calculator-back-2.onrender.com/calculate', { // Change URL based on backend
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
