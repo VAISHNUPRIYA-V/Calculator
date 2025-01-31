@@ -1,0 +1,23 @@
+h2 {
+  font-size: 72px; /* Large text */
+  font-weight: bold; /* Makes the text bold */
+  text-align: right; /* Aligns text to the right */
+  position: absolute; /* Allows positioning the text relative to the body */
+  right: 50px; /* Adds some space from the right edge */
+  top: 50%; /* Vertically centers the text */
+  transform: translateY(-50%); /* Corrects the vertical centering */
+  color: white; /* Ensures the text is white */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow to improve readability */
+}
+
+.quote {
+  font-size: 18px; /* Smaller font size for the quote */
+  text-align: right; /* Aligns the quote to the right */
+  position: absolute; /* Allows positioning the text relative to the body */
+  right: 50px; /* Aligns with the "Welcome" text */
+  top: 60%; /* Moves the quote below the "Welcome" text */
+  transform: translateY(-50%); /* Corrects the vertical centering for the quote */
+  color: white; /* Ensures the text is white */
+  font-style: italic; /* Italicizes the quote */
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow to the quote */
+}

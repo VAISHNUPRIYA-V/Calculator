@@ -1,0 +1,75 @@
+.App {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 10px; /* Adjust as needed for spacing from top */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the h1 horizontally */
+    color: rgb(234, 234, 243);
+  }
+  
+  .container {
+    width: 390px; /* Increased by 40px */
+    height: 480px; /* Increased by 40px */
+    border: 5px solid #111;
+    border-radius: 10px;
+    background-color: rgb(197, 191, 191);
+    padding: 28px; /* Increased padding for internal spacing */
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    position: absolute;
+    top: 0px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(70px, auto); /* Increased grid row height */
+  }
+  
+  input[type="text"] {
+    width: 340px; /* Increased width */
+    height: 70px; /* Increased height */
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+    border: none;
+    text-align: right;
+    font-size: 35px; /* Increased font size */
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px; /* Increased padding */
+  }
+  
+  #clear {
+    grid-column: 1/3;
+  }
+  
+  #equal {
+    grid-column: 3/5;
+  }
+  
+  button {
+    margin: 8px; /* Increased margin */
+    border-radius: 5px;
+    background-color: #777;
+    cursor: pointer;
+    font-size: 24px; /* Increased font size */
+    font-weight: 600;
+  }
+  
+  .highlight {
+    background-color: rgb(7, 46, 46);
+  }
+  

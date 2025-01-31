@@ -1,0 +1,19 @@
+.page-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns the heading at the top */
+    flex-direction: column; /* Allows the content to stack vertically */
+    height: 100vh; /* Takes full viewport height */
+    padding: 20px;
+    text-align: center; /* Center-aligns the text */
+  }
+  
+  .page-container h1 {
+    font-size: 48px; /* Larger text size for heading */
+    font-weight: bold;
+    margin-top: 20px; /* Adds space from the top of the page */
+    color: white#333; /* Dark text color */
+  }
+  ul{
+    font-size: 36px;
+  }

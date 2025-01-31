@@ -1,0 +1,170 @@
+/* General body styles */
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes sure content is centered vertically */
+  }
+  
+  /* Wrapper container to center content */
+  .wrapper {
+    width: 100%;
+    max-width: 800px; /* Limits width for larger screens */
+    padding: 20px;
+    box-sizing: border-box;
+    background: #939090;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Title style */
+  h1 {
+    text-align: center;
+    margin: 0; /* Remove any extra margin */
+    font-size: 3rem;
+    position: fixed;  /* Fixed positioning */
+    top: 50px; /* Set top distance */
+    left: 50%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Offset the heading's width to perfectly center it */
+    width: 100%; /* Ensure the heading spans the full width */
+}
+  
+  /* Flexbox layout for form inputs */
+  .form-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .col {
+    flex: 1;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1rem;
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Button styles */
+  .btn {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Table styles */
+  table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+  
+  th {
+    background-color: #444;
+  }
+  
+  tbody td {
+    text-transform: uppercase;
+    background-color: #222;
+  }
+  
+  tfoot td {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #444;
+  }
+  
+  table, th, td {
+    border: 1px solid #555;
+  }
+  
+  /* Responsive Design: Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+    
+    .col {
+      width: 100%;
+    }
+  
+    .btn {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+    }
+  
+    th, td {
+      font-size: 1rem;
+    }
+  }
+  

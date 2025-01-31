@@ -1,0 +1,61 @@
+/* App.css */
+/* Apply background image to the entire body */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* Ensures the body takes up the entire viewport height */
+  background-image: url('./assets/images/background.jpg');
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling (optional) */
+}
+
+/* Optional: Set text color for the body */
+body {
+  color: white;
+  font-family: Arial, sans-serif; /* Optional font family */
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;  /* Distribute space between the logo and nav links */
+  align-items: center;  /* Center the items vertically */
+  position: fixed;  /* Fix navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width of the page */
+  padding: 10px 20px;   /* Adjust padding as needed */
+  background-color: #333; /* Dark background for the navbar */
+  z-index: 1000; /* Make sure it's above other content */
+}
+
+.logo-container {
+  flex: 1;  /* Push the logo to the left */
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;  /* Spacing between the nav items */
+  margin: 0;
+  list-style: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
